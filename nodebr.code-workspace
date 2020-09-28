@@ -1,0 +1,38 @@
+{
+	"folders": [
+		{
+			"name": "Imersão",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/node_modules": true,
+			"**/*.lock": true,
+			"mysql": true,
+			"**/dist": true,
+		},
+		"files.watcherExclude": {
+			"**/.git/objects/**": true,
+			"**/.git/subtree-cache/**": true,
+			"**/node_modules/*/**": true,
+			"**/dist": true,
+		}
+	},
+	"launch": {
+		"configurations": [
+			{
+				"name": "Imersão",
+				"type": "node",
+				"request": "attach",
+				"port": 9229,
+				"address": "localhost",
+				"restart": true,
+				"localRoot": "${workspaceFolder:Imersão}",
+				"remoteRoot": "/home/app",
+				"protocol": "inspector"
+			}
+		],
+	}
+}
